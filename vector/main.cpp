@@ -14,6 +14,8 @@ void vectorTest()
     v.insert(3, 5);
     v.insert(8);
     v.sort(2);
+    v.uniquify();
+    v.remove(0);
     cout << v.search(2);
     v.traverse(printVector);
     getchar();
