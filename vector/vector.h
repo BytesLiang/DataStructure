@@ -285,7 +285,7 @@ static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) //二分查找算法A
 */
 /*
 template <typename T>
-static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) // 二分查找算法B
+static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) // 二分查找算法B,返回元素位置
 {
     while (1 < hi - lo)
     {
@@ -296,14 +296,14 @@ static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) // 二分查找算法B
 }
 */
 template <typename T>
-static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) // 二分查找算法C
+static Rank binSearch(T *A, T const &e, Rank lo, Rank hi) // 二分查找算法C,返回元素位置，相同元素返回秩最大者
 {
     while (lo < hi)
     {
         Rank mi = (lo + hi) >> 1;
         (e < A[mi]) ? hi = mi : lo = mi + 1;
     }
-    return --lo;
+    return (e == A[--lo]) ? lo : -1;
 }
 template <typename T>
 static Rank fibSearch(T *A, T const &e, Rank lo, Rank hi) //Fibonacci查找算法
