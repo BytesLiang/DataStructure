@@ -1,6 +1,24 @@
 {
     "files.associations": {
         "limits": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "string_view": "cpp",
+        "streambuf": "cpp",
+        "memory_resource": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp",
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "istream": "cpp",
+        "cmath": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "typeinfo": "cpp",
+        "deque": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp"
     }
 }

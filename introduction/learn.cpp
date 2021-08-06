@@ -4,21 +4,13 @@
 
 using namespace std;
 
-template <class T>
-class Mycode
-{
-public:
-    T value = 20;
-    Mycode(T v)
-    {
-        value = v;
-        cout << "begin!";
-    }
-};
 int main()
 {
-    Mycode<int> mycode(20);
-    cout << mycode.value;
+    int n = 5;
+    while (--n)
+    {
+        cout << n;
+    }
     getchar();
     getchar();
     return 0;
